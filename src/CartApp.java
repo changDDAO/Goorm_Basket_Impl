@@ -11,13 +11,13 @@ public class CartApp {
         Product 마늘 = new Product(4L, "마늘", 3000);
         Product 깻잎 = new Product(5L, "깻잎", 1000);
         // 상품의 이름을 비교하여 고유값으로 여기게 하기 위해  equals()와 hashCode()를 override
-        Product item6 = new Product(5L, "깻잎", 1000);
+        Product 깻잎2 = new Product(5L, "깻잎", 1000);
         productSet.add(김치);
         productSet.add(배추);
         productSet.add(삼겹살);
         productSet.add(마늘);
         productSet.add(깻잎);
-        productSet.add(item6);
+        productSet.add(깻잎2);
         System.out.println("고유한 상품 목록");
         for (Product product : productSet) {
             System.out.println("product.getProductName() = " + product.getProductName());
