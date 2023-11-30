@@ -19,6 +19,7 @@ public class Cart {
         Integer curQuantity = productMap.get(product);
         if (curQuantity - quantity<0) {
             System.out.println("현재 수량보다 많은 수량 제거 요청을 하였습니다.");
+            return;
         }
         productMap.put(product, productMap.get(product) - quantity);
     }
